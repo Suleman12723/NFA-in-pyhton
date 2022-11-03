@@ -66,6 +66,8 @@ for i in range(len(input_string)):
             if i!= (len(input_string)-1):
                 if len(next_state) > 1:
                     current_state = multipleNextStates(next_state)
+                else:
+                    current_state = next_state
             elif i==(len(input_string)-1):
                 if len(final_state) >1:
                     temp = final_state.split(",")
